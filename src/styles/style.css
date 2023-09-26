@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    ---left-spacing: 6rem;
+    ---green: #70a827;
+
+    --fancy-font: 'Kaushan Script', cursive;
+}
+
+body {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: #d8d8d8; */
+    background-color: #a1a1a1;
+    background: linear-gradient(to right , #a1a1a1, #c1c1c1);
+    /* background: linear-gradient(to right, #ff0000, #0000ff); */
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .img {
+    height: 250px;
+    width: 500px;
+} */
+
+.img {
+    height: 90vh;
+    width: 95vw; 
+    position: fixed;
+    right: 0;
+    z-index: -1;
+    filter: brightness(.75);
+    bottom: 0;
+    right: 0;
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-wrapper, .link-wrapper, .middle-content, .content-wrapper,
+.footer-wrapper, .footer-content, .page-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(0, 0, 0, 0.817);
+    justify-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.link-wrapper {
+    height: 4rem;
+    width: 30rem;
+    margin-left: var(---left-spacing);
+    /* border: 1px solid #fff; */
+    justify-content: space-between;
+}
+
+.link-style {
+    color: #fff;
+    font-size: .9em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .15s ease-in;
+}
+
+.link-style:hover {
+    color: rgb(209, 203, 203);
+}
+
+
+/*  */
+/* Main Contsiner / Wrapper */
+/*  */
+
+.middle-content {
+    width: 100vw;
+    height: 45rem;
+    /* border: 1px solid red; */
+}
+
+.content-wrapper {
+    width: 37rem;
+    height: 30rem;
+    position: relative;
+
+    flex-direction: column;
+    justify-content: left;
+    /* border: 1px solid red; */
+    margin-left: var(---left-spacing);
+}
+
+.res-title {
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 2rem;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 10px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.res-description {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.btn-style {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: .9rem;
+    width: 16rem;
+    height: 4.5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 6px;
+    font-weight: 300;
+    transition: .2s ease-in;
+}
+
+.btn-style:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #314d0e;
+    border: 1px solid #314d0e;
+}
+
+/*  */
+/* Footer Msg */
+/*  */
+
+.footer-wrapper {
+    /* background-color: rgba(0, 0, 0, 0.512); */
+    height: 8.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-content {
+    height: 4rem;
+    width: 20rem;
+    justify-content: center;
+    /* border: 1px solid darkgoldenrod; */
+}
+
+
+/*  */
+/* Card Style */
+/*  */
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    width: 25rem;
+    height: 15rem;
+    margin: 1rem;
+    padding: .75rem;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    transition: .5s ease-in-out;
+    /* background-color: rgba(0, 0, 0, 0.108); */
+    outline: 1px solid rgb(255, 255, 255);
+}
+
+/* .food-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 20px;
+    z-index: -1;
+    transition: .4s ease-in-out;
+    background-color: #00000087;
+}
+
+.food-card:hover::before {
+    height: 100%;
+} */
+
+.food-card:hover {
+    background-color: rgba(0, 0, 0, .7);
+    outline: none;
+}
+
+.food-name, .food-description, .food-price {
+    z-index: 1000;
+}
+
+.food-name{
+    font-size: 2.5rem;
+    /* font-family: var(--fancy-font); */
+}
+
+.food-description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.food-price {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.page-wrapper {
+    justify-content: center;
+}
+
+.msg-content {
+    width: 30rem;
+    height: 10rem;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
